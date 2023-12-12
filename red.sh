@@ -13,10 +13,10 @@ morado="\e[0;35m\033[1m"
 turquoiseColour="\e[0;36m\033[1m"
 gris="\e[0;37m\033[1m"
 negrita="\e[1m"
+
 #Funcion de salir con CONTROL + C
 trap ctrl_c INT
 function ctrl_c(){
-	
 	echo "Saliendo..."
 	ifconfig $nic down 2> /dev/null
 	airmon-ng stop $nic 2> /dev/null
@@ -29,6 +29,7 @@ function ctrl_c(){
 	rm -rf /home/kali/prueba/evilTwin/confiDnsmasq
 	exit 0
 }
+
 echo -e ""
 echo -e "${rojo}-----------------------------------------${sincolor}"
 echo -e "${rojo}|${sincolor}${morado}[*]${verde}Modo monitor en tu tarjeta de red${sincolor}${morado}[*]${sincolor}${rojo}|${sincolor}"
