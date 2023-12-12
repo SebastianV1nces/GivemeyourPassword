@@ -1,5 +1,6 @@
 #!/bin/bash
 # Herramienta para crear un EvilTwin con portal captivo
+# para obtener clave del wifi objetivo
 #BY SebastianV1nces
 
 #Colours
